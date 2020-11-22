@@ -35,6 +35,8 @@
             $data = [
                 'name' => $this->request->getVar('name'),
                 'email' => $this->request->getVar('email'),
+                'contact_no' => $this->request->getVar('contact_no'),
+                'created_at' => $this->request->getVar('created_at'),
             ];
             $save = $model->insert($data);
 
@@ -52,6 +54,8 @@
             $data = [
                 'name' => $this->request->getVar('name'),
                 'email' => $this->request->getVar('email'),
+                'contact_no' => $this->request->getVar('contact_no'),
+                'created_at' => $this->request->getVar('created_at'),
             ];
             $save = $model->update($id,$data);
 

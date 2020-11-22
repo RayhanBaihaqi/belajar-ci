@@ -80,6 +80,13 @@
                                     <input type="text" name="email" class="form-control" id="email" placeholder="Masukkan Email"
                                     value="<?= $user['email'] ?>">
                                 </div>
+                                <div class="form-group">
+                                    <label for="contact_no">Nomor Kontak</label>
+                                    <input type="text" name="contact_no" class="form-control" id="contact_no" value="<?= $user['contact_no'] ?>">
+                                </div>
+                                <div class="form-group">
+                                    <input type="hidden" name="created_at" class="form-control" id="created_at" value="<?php echo date('');?>">
+                                </div>
                                 <div class="form-grup">
                                     <button type="submit" id="send_form" class="btn btn-success">Submit</button>
                                 </div>

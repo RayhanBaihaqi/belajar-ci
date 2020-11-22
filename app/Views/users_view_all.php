@@ -74,7 +74,8 @@
                                 <th>ID</td>
                                 <th>Nama</td>
                                 <th>Email</td>
-                                <th>Action</td>
+                                <th>Nomor Kontak</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -84,6 +85,7 @@
                                 <td><?= $pengguna['id'];?></td>
                                 <td><?= $pengguna['name'];?></td>
                                 <td><?= $pengguna['email'];?></td>
+                                <td><?= $pengguna['contact_no']; ?></td>
                                 <td>
                                     <a href="<?= base_url('admin/users/edit/'.$pengguna['id']); ?>" class="btn btn-success">Edit</a>
                                     <a href="<?= base_url('admin/users/delete/'.$pengguna['id']); ?>" class="btn btn-danger">Delete</a>
