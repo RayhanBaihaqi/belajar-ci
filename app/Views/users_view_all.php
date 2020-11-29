@@ -22,11 +22,20 @@
                 </div>
                 <ul class="list-unstyled components">
                     <p>Welcome</p>
-                    <li>
-                        <a href="<?= base_url('admin/users/welcome')?>">Home</a>
-                    </li>   
                     <li class="active">
-                        <a href="<?= base_url('admin/users/index')?>">List User</a>
+                        <a href="<?= base_url('admin/Dashboard')?>">Home</a>
+                    </li>
+                    <li>
+                        <a href="<?= base_url('admin/users/index')?>">Master User</a>
+                    </li>
+                    <li>
+                        <a href="<?= base_url('admin/berita/index')?>">Master Berita</a>
+                    </li>
+                    <li>
+                        <a href="<?= base_url('admin/halaman/index')?>">Master Halaman</a>
+                    </li>
+                    <li>
+                        <a href="<?= base_url('admin/login/logout')?>">Logout</a>
                     </li>
                 </ul>
                 <ul class="list-unstyled CTAs">
@@ -65,7 +74,7 @@
                 </nav>
         <div class="container mt-5">
             <a href="<?= base_url('admin/users/create')?>" class="btn btn-success mb-2">Create</a>
-            <h2> List User </h2>
+            <h2> Master User </h2>
             <div class="row mt-3">
                 <div class="col-sm-12">
                     <table class="table table-striped" id="tableuser">

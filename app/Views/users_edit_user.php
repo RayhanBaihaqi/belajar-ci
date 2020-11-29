@@ -23,11 +23,20 @@
                 </div>
                 <ul class="list-unstyled components">
                     <p>Welcome</p>
-                    <li>
-                        <a href="<?= base_url('admin/users/welcome')?>">Home</a>
-                    </li>   
                     <li class="active">
-                        <a href="<?= base_url('admin/users/index')?>">List User</a>
+                        <a href="<?= base_url('admin/Dashboard')?>">Home</a>
+                    </li>
+                    <li>
+                        <a href="<?= base_url('admin/users/index')?>">Master User</a>
+                    </li>
+                    <li>
+                        <a href="<?= base_url('admin/berita/index')?>">Master Berita</a>
+                    </li>
+                    <li>
+                        <a href="<?= base_url('admin/halaman/index')?>">Master Halaman</a>
+                    </li>
+                    <li>
+                        <a href="<?= base_url('admin/login/logout')?>">Logout</a>
                     </li>
                 </ul>
                 <ul class="list-unstyled CTAs">

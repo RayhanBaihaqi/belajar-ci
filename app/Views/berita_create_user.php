@@ -75,24 +75,26 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-9">
-                    <form action="<?= base_url('admin/users/store'); ?>" method="POST">
+                    <form action="<?= base_url('admin/berita/store'); ?>" method="POST">
                                 <div class="form-grup">
-                                    <label for="name">Nama</label>
-                                    <input type="text" name="name" class="form-control" id="name" placeholder="Masukkan Nama">
-                                </div>
-                                <div class="form-grup">
-                                    <label for="email">Email</label>
-                                    <input type="text" name="email" class="form-control" id="email" placeholder="Masukkan Email">
+                                    <label for="judulberita">Judul Berita</label>
+                                    <input type="text" name="judulberita" class="form-control" id="judulberita" placeholder="Masukkan Judul Berita">
                                 </div>
                                 <div class="form-grup">
-                                    <label for="email">Password</label>
-                                    <input type="password" name="password" class="form-control" id="password" placeholder="Masukkan Password">
+                                    <label for="author">Author</label>
+                                    <input type="text" name="author" class="form-control" id="author" placeholder="Masukkan author">
                                 </div>
-                                <div class="form-group">
-                                    <input type="hidden" name="contact_no" class="form-control" id="contact_no" placeholder="Masukkan Nomor Kontak">
+                                <div class="form-grup">
+                                    <label for="tglposting">Tanggal Posting</label>
+                                    <input type="date" name="tglposting" class="form-control" id="tglposting" placeholder="Masukkan Tanggal Posting">
                                 </div>
-                                <div class="form-group">
-                                    <input type="hidden" name="created_at" class="form-control" id="created_at" value="<?php echo date('');?>">
+                                <div class="form-grup">
+                                    <label for="foto">Foto</label>
+                                    <input type="text" name="foto" class="form-control" id="foto" placeholder="Masukkan Foto">
+                                </div>
+                                <div class="form-grup">
+                                    <label for="isiberita">Isi Berita</label>
+                                    <textarea name="isiberita" class="form-control" id="isiberita" placeholder="Masukkan Isi Berita"></textarea>
                                 </div>
                                 <div class="form-grup">
                                     <button type="submit" id="send_form" class="btn btn-success">Submit</button>

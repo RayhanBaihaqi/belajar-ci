@@ -14,7 +14,7 @@
         <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
     </head>
 <body>
-        <div class="wrapper">
+<div class="wrapper">
             <!-- Sidebar Holder -->
             <nav id="sidebar">
                 <div class="sidebar-header">
@@ -38,6 +38,7 @@
                         <a href="<?= base_url('admin/login/logout')?>">Logout</a>
                     </li>
                 </ul>
+                </ul>
                 <ul class="list-unstyled CTAs">
                     <li>
                         <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
@@ -47,7 +48,7 @@
                     </li>
                 </ul>
             </nav>
-            <div id="content">
+    <div id="content">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid">
                     <button type="button" id="sidebarCollapse" class="btn btn-info">
@@ -72,38 +73,49 @@
                         </div>
                     </div>
                 </nav>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-9">
-                    <form action="<?= base_url('admin/users/store'); ?>" method="POST">
-                                <div class="form-grup">
-                                    <label for="name">Nama</label>
-                                    <input type="text" name="name" class="form-control" id="name" placeholder="Masukkan Nama">
-                                </div>
-                                <div class="form-grup">
-                                    <label for="email">Email</label>
-                                    <input type="text" name="email" class="form-control" id="email" placeholder="Masukkan Email">
-                                </div>
-                                <div class="form-grup">
-                                    <label for="email">Password</label>
-                                    <input type="password" name="password" class="form-control" id="password" placeholder="Masukkan Password">
-                                </div>
-                                <div class="form-group">
-                                    <input type="hidden" name="contact_no" class="form-control" id="contact_no" placeholder="Masukkan Nomor Kontak">
-                                </div>
-                                <div class="form-group">
-                                    <input type="hidden" name="created_at" class="form-control" id="created_at" value="<?php echo date('');?>">
-                                </div>
-                                <div class="form-grup">
-                                    <button type="submit" id="send_form" class="btn btn-success">Submit</button>
-                                </div>
-                            </form>
-                    </div>
+        <div class="container mt-5">
+            <a href="<?= base_url('admin/berita/create')?>" class="btn btn-success mb-2">Create</a>
+            <h2> Master Berita </h2>
+            <div class="row mt-3">
+                <div class="col-sm-12">
+                    <table class="table table-striped" id="tableuser">
+                        <thead>
+                            <tr>
+                                <th>ID</td>
+                                <th>Judul Berita</td>
+                                <th>Author</td>
+                                <th>Tanggal Posting</th>
+                                <th>Foto</th>
+                                <th>Isi Berita</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php if($berita):?>
+                            <?php foreach($berita as $pengguna):?>
+                            <tr>
+                                <td><?= $pengguna['id'];?></td>
+                                <td><?= $pengguna['judulberita'];?></td>
+                                <td><?= $pengguna['author'];?></td>
+                                <td><?= $pengguna['tglposting'];?></td>
+                                <td><?= $pengguna['foto']; ?></td>
+                                <td><?= $pengguna['isiberita']; ?></td>
+                                <td>
+                                    <a href="<?= base_url('admin/berita/edit/'.$pengguna['id']); ?>" class="btn btn-success">Edit</a>
+                                    <a href="<?= base_url('admin/berita/delete/'.$pengguna['id']); ?>" class="btn btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                            <?php endforeach; ?>
+                            <?php endif; ?>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
-        </div>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
     <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" type="text/javascript"></script>
     <script type="text/javascript">

@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+    <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>List User</title>
+        <title>Collapsible sidebar using Bootstrap 4</title>
         <!-- Bootstrap CSS CDN -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        
         <!-- Our Custom CSS -->
         <link rel="stylesheet" href="http://belajar-ci.test/css/style.css">
         <!-- Font Awesome JS -->
         <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
         <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
     </head>
-<body>
-        <div class="wrapper">
+    <body>
+    <div class="wrapper">
             <!-- Sidebar Holder -->
             <nav id="sidebar">
                 <div class="sidebar-header">
@@ -47,7 +48,7 @@
                     </li>
                 </ul>
             </nav>
-            <div id="content">
+    <div id="content">
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid">
                     <button type="button" id="sidebarCollapse" class="btn btn-info">
@@ -72,41 +73,44 @@
                         </div>
                     </div>
                 </nav>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-9">
-                    <form action="<?= base_url('admin/users/store'); ?>" method="POST">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <h2>Edit halaman</h2>
+                            <form action="<?= base_url('admin/halaman/update'); ?>" method="POST">
+                                <input type="hidden" name="id" value="<?= $halaman['id'] ?>">
                                 <div class="form-grup">
-                                    <label for="name">Nama</label>
-                                    <input type="text" name="name" class="form-control" id="name" placeholder="Masukkan Nama">
-                                </div>
-                                <div class="form-grup">
-                                    <label for="email">Email</label>
-                                    <input type="text" name="email" class="form-control" id="email" placeholder="Masukkan Email">
+                                    <label for="judulhalaman">Judul Halaman</label>
+                                    <input type="text" name="judulhalaman" class="form-control" id="judulhalaman" placeholder="Masukkan Judul Halaman" value="<?= $halaman['judulhalaman'] ?>">
                                 </div>
                                 <div class="form-grup">
-                                    <label for="email">Password</label>
-                                    <input type="password" name="password" class="form-control" id="password" placeholder="Masukkan Password">
+                                    <label for="author">Author</label>
+                                    <input type="text" name="author" class="form-control" id="author" placeholder="Masukkan author" value="<?= $halaman['author'] ?>">
                                 </div>
-                                <div class="form-group">
-                                    <input type="hidden" name="contact_no" class="form-control" id="contact_no" placeholder="Masukkan Nomor Kontak">
+                                <div class="form-grup">
+                                    <label for="tglposting">Tanggal Posting</label>
+                                    <input type="date" name="tglposting" class="form-control" id="tglposting" placeholder="Masukkan Tanggal Posting" value="<?= $halaman['tglposting'] ?>">
                                 </div>
-                                <div class="form-group">
-                                    <input type="hidden" name="created_at" class="form-control" id="created_at" value="<?php echo date('');?>">
+                                <div class="form-grup">
+                                    <label for="isihalaman">Isi Halaman</label>
+                                    <textarea name="isihalaman" class="form-control" id="isihalaman" placeholder="Masukkan Isi halaman"><?= $halaman['isihalaman'] ?></textarea>
                                 </div>
                                 <div class="form-grup">
                                     <button type="submit" id="send_form" class="btn btn-success">Submit</button>
                                 </div>
                             </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
-    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <!-- Popper.JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        <script type="text/javascript">
             $(document).ready(function () {
                 $('#sidebarCollapse').on('click', function () {
                     $('#sidebar').toggleClass('active');
@@ -114,11 +118,5 @@
                 });
             });
         </script>
-        <script>
-            $(document).ready( function () {
-                $('#tableuser').DataTable();
-            } );
-        </script>
-    
-</body>
+    </body>
 </html>
