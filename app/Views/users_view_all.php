@@ -83,7 +83,7 @@
                                 <th>ID</td>
                                 <th>Nama</td>
                                 <th>Email</td>
-                                <th>Nomor Kontak</th>
+                                <th>Password</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -94,7 +94,7 @@
                                 <td><?= $pengguna['id'];?></td>
                                 <td><?= $pengguna['name'];?></td>
                                 <td><?= $pengguna['email'];?></td>
-                                <td><?= $pengguna['contact_no']; ?></td>
+                                <td><?= $pengguna['password']; ?></td>
                                 <td>
                                     <a href="<?= base_url('admin/users/edit/'.$pengguna['id']); ?>" class="btn btn-success">Edit</a>
                                     <a href="<?= base_url('admin/users/delete/'.$pengguna['id']); ?>" class="btn btn-danger">Delete</a>

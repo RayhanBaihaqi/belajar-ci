@@ -90,8 +90,8 @@
                                     value="<?= $user['email'] ?>">
                                 </div>
                                 <div class="form-group">
-                                    <label for="contact_no">Nomor Kontak</label>
-                                    <input type="text" name="contact_no" class="form-control" id="contact_no" value="<?= $user['contact_no'] ?>">
+                                    <label for="password">Password</label>
+                                    <input type="password" name="password" class="form-control" id="password" value="<?= $user['password'] ?>">
                                 </div>
                                 <div class="form-group">
                                     <input type="hidden" name="created_at" class="form-control" id="created_at" value="<?php echo date('');?>">

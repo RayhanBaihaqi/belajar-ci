@@ -36,15 +36,15 @@ ColPositions_MainForm.ListTables<|||>1<|||>0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15
 ColSort_MainForm.ListTables<|||>1<|||>0,0
 LastSessions<|||>1<|||>Laragon
 LastActiveSession<|||>1<|||>Laragon
-ColWidths_frmTableEditor.listColumns<|||>1<|||>38,100,156,90,60,65,50,119,130,140,100,100
+ColWidths_frmTableEditor.listColumns<|||>1<|||>38,100,156,90,60,65,50,134,130,140,100,100
 ColsVisible_frmTableEditor.listColumns<|||>1<|||>0,1,2,3,4,5,6,7,8,9,10,11
 ColPositions_frmTableEditor.listColumns<|||>1<|||>0,1,2,3,4,5,6,7,8,9,10,11
 ColSort_frmTableEditor.listColumns<|||>1<|||>-1,0
-ColWidths_frmTableEditor.treeIndexes<|||>1<|||>249,100,80
+ColWidths_frmTableEditor.treeIndexes<|||>1<|||>1039,100,80
 ColsVisible_frmTableEditor.treeIndexes<|||>1<|||>0,1,2
 ColPositions_frmTableEditor.treeIndexes<|||>1<|||>0,1,2
 ColSort_frmTableEditor.treeIndexes<|||>1<|||>-1,0
-ColWidths_frmTableEditor.listForeignKeys<|||>1<|||>15,80,100,80,80,80
+ColWidths_frmTableEditor.listForeignKeys<|||>1<|||>806,80,100,80,80,80
 ColsVisible_frmTableEditor.listForeignKeys<|||>1<|||>0,1,2,3,4,5
 ColPositions_frmTableEditor.listForeignKeys<|||>1<|||>0,1,2,3,4,5
 ColSort_frmTableEditor.listForeignKeys<|||>1<|||>-1,0
@@ -54,6 +54,7 @@ SessionManager_WindowWidth<|||>3<|||>800
 SessionManager_WindowHeight<|||>3<|||>450
 querymemoheight<|||>3<|||>219
 MainWinHeight<|||>3<|||>603
+MainWinMaximized<|||>3<|||>1
 SQLFile0<|||>1<|||>C:\Users\ZENBOOK SERIES\Documents\db_lat_weblan1.sql
 Servers\Laragon\SessionCreated<|||>1<|||>2017-02-14 13:41:54
 Servers\Laragon\Host<|||>1<|||>localhost
@@ -85,7 +86,7 @@ Servers\Laragon\SSL_CA<|||>1<|||>
 Servers\Laragon\SSL_Cipher<|||>1<|||>
 Servers\Laragon\RefusedCount<|||>3<|||>5
 Servers\Laragon\ServerVersionFull<|||>1<|||>5.7.24 - MySQL Community Server (GPL)
-Servers\Laragon\ConnectCount<|||>3<|||>6
+Servers\Laragon\ConnectCount<|||>3<|||>10
 Servers\Laragon\ServerVersion<|||>3<|||>50724
-Servers\Laragon\LastConnect<|||>1<|||>2020-11-22 15:00:50
+Servers\Laragon\LastConnect<|||>1<|||>2020-11-30 15:52:30
 Servers\Laragon\lastUsedDB<|||>1<|||>belajar-ci
